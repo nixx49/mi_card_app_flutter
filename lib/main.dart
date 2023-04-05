@@ -12,32 +12,23 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         //appBar: AppBar(),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.purple,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: <Widget>[
-              Container(
-                  height: 100,
-                  width: 500,
-                  margin: const EdgeInsets.all(10),
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text("Hello2")),
-              Container(
-                  height: 100,
-                  width: 100,
-                  margin: const EdgeInsets.all(10),
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text("Hello")),
-              Container(
-                  height: 100,
-                  width: 100,
-                  margin: const EdgeInsets.all(10),
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(10),
-                  child: const Text("Hello")),
+            //mainAxisAlignment: MainAxisAlignment.start,
+            children: const <Widget>[
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage("images/nimantha.jpg"),
+              ),
+              SizedBox(height: 20,),
+              Text(
+                "Nimantha",
+                 style: TextStyle(
+                    fontSize: 40.0,
+                     fontWeight: FontWeight.bold,
+                     color: Colors.white),
+              )
             ],
           ),
         ),
