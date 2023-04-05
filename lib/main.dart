@@ -21,14 +21,24 @@ class Myapp extends StatelessWidget {
                 radius: 50,
                 backgroundImage: AssetImage("images/nimantha.jpg"),
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 5,),
               Text(
                 "Nimantha",
                  style: TextStyle(
+                   fontFamily: 'Pacifico',
                     fontSize: 40.0,
-                     fontWeight: FontWeight.bold,
+                     //fontWeight: FontWeight.bold,
                      color: Colors.white),
-              )
+              ),
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                letterSpacing: 2.5),
+              ),
             ],
           ),
         ),
